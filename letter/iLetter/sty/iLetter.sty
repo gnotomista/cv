@@ -1,0 +1,55 @@
+% ---------------------------------------------------------- LANGUAGE AND FONT ENCODING
+\usepackage[english]{babel} % to choose the language
+\usepackage[T1]{fontenc}
+%\usepackage[latin1]{inputenc}
+%\usepackage[scaled]{beramono}
+\usepackage[scaled]{helvet} % ss
+\usepackage{courier} % tt
+\usepackage{alltt} % to write in `verbatim'
+\renewcommand{\rmdefault}{ppl} % rm
+%\renewcommand{\sfdefault}{phv}
+%\renewcommand{\rmdefault}{ptm}
+%\renewcommand{\ttdefault}{pcr}
+\renewcommand\labelitemi{\color{ablue}$\bullet$}
+\normalfont
+\linespread{1.05} % Palatino needs more leading
+\addto\captionsenglish{\renewcommand{\enclname}{Attachments}}
+\addto\captionsitalian{\renewcommand{\enclname}{Allegati}}
+% ---------------------------------------------------------- PAGE LAYOUT
+\usepackage[marginparwidth=25mm]{geometry}
+%\usepackage[showframe,pass]{geometry}
+%\geometry{bindingoffset=1.5cm} % definition of the binding offset
+\usepackage{setspace} % for the line spacing
+\usepackage{pbox} % to use boxes
+\usepackage{changepage} % to change margins
+\usepackage{afterpage} % for the command afterpage
+\longindentation=0pt
+\usepackage{pdfpages}
+\pagenumbering{gobble}
+% ---------------------------------------------------------- COLORS
+\usepackage{color}
+\usepackage{xcolor}
+\definecolor{ablue}{rgb}{0.2, 0.4, 0.6}
+% ---------------------------------------------------------- FIGURES
+\usepackage{graphicx} % for figures
+%\usepackage[draft]{graphicx} % for draft (figures not loaded)
+%\usepackage{sidecap} % for side captions (the same effect can be obtained with minipage)
+\graphicspath{{fig//}} % figures path
+\usepackage{import}
+%\usepackage{subfigure} % for subfigures
+\usepackage{float} % to best arrange the figures
+\usepackage{tikz} % TIKZ
+% ---------------------------------------------------------- TABLES
+\usepackage{booktabs} % for tables
+\usepackage{multirow} % for multirow tables
+\usepackage{multicol} % for multicolumn tables
+% ---------------------------------------------------------- LISTS
+\usepackage{enumerate} % for enumerate with letters
+\usepackage{enumitem} % For manipulating the whitespace between and within lists
+\usepackage{mdwlist} % for itemize*, enumerate*, ... (more compact bullet points)
+% ---------------------------------------------------------- CROSS-REFERENCING AND PDF VIEWER SETTINGS
+
+
+
+
+
