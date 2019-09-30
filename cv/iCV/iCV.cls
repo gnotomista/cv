@@ -248,6 +248,8 @@
 	\end{iCVsection}
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ICVPERSONALINFOSHORT
+
 \newcommand{\iCVpersonalinfoshort}[5]{
 	\begin{iCVsection}{Personal Information}
 		\iCVpersonalinfoentry{\sc address}{#1}
