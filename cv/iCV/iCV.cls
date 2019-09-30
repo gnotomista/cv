@@ -248,6 +248,18 @@
 	\end{iCVsection}
 }
 
+\newcommand{\iCVpersonalinfoshort}[5]{
+	\begin{iCVsection}{Personal Information}
+		\iCVpersonalinfoentry{\sc address}{#1}
+		\iCVpersonalinfoentry{\sc contacts}{
+			\ifstrempty{#2}{}{\raisebox{-3.14pt}{\includegraphics[height=12pt]{phone.png}} \hspace{0.1\spacebetweenentries} \href{tel:#2}{#2}\\[0.314\spacebetweenentries]}
+			\ifstrempty{#3}{}{\raisebox{-3.14pt}{\includegraphics[height=12pt]{mail.png}} \hspace{0.1\spacebetweenentries} \href{mailto:#3}{#3}\\[0.314\spacebetweenentries]}
+			\ifstrempty{#4}{}{\raisebox{-3.14pt}{\includegraphics[height=12pt]{skype.png}} \hspace{0.1\spacebetweenentries} \href{skype:#4?call}{#4}\\[0.314\spacebetweenentries]}
+			\ifstrempty{#5}{\vspace{-1.314\spacebetweenentries}}{\raisebox{-3.14pt}{\includegraphics[height=12pt]{website.png}} \hspace{0.1\spacebetweenentries} \href{#5}{#5}}
+		}
+	\end{iCVsection}
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ICVWORKEXPERIENCE
 
 \newcommand{\iCVworkexperience}[6]{
